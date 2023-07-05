@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */
+}
+
+main, footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header p {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Outfit';
+}
+
+header nav ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-family: 'Outfit';
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #a2a2a2;
+}
+
+header.navbar {
+    background-color: #d9d9d9;/* colore impostato con RGB e con la trasparenza, che si può notare sopratutto quando cambia il colore di sfondo */
+    text-align: center;
+}
+
+section.paese {
+    margin: 10px 120px auto;
+    /*border-color: red;
+    border-style: double;*/
+    margin-bottom: 10px;
+}
+
+section.paese p.nomepaese {
+    margin-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Outfit';
+    font-size: 20px;
+}
+
+section p img.bandiera {
+    width: 5%;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+
+div {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+div.colazione {
+    background-color: #d9d9d9;
+    position: relative;
+}
+
+div.colazione img {
+    width: 40%;
+    margin: 40px;
+    margin-left: 25%;
+}
+
+h2.testocolazione {
+    /*margin-left: 25%;*/
+    margin: 40px;
+    margin-right: 15%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Outfit';
+    font-size: 20px;
+}
+
+section.hero {
+    /*background:rgba(0,0,0,0.60); colore impostato con RGB e con la trasparenza, che si può notare sopratutto quando cambia il colore di sfondo */
+    text-align: left;
+}
+
+
+section.hero h1 {
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 40px; font-family: "Inter", serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+section.hero-chi-siamo {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+section.hero-chi-siamo h1 {
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 40px; font-family: "Inter", serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+
+main div.card {
+    background: #fff;
+    border-radius: 0px;
+    position: relative;
+}
+
+main div.card img {
+    border-radius: 0px 0px 0 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main div img {
+    border-radius: 0px;
+}
+
+main div.card h1 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main div.card h2 {
+    margin: 0;
+    padding: 0px 20px 4px 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+main div.card p {
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+    line-height: 1.5; /* l'interlinea del testo */
+}
+
+main div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9;
+    width: 100%;
+}
+
+section.indi {
+    text-align: center;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+section h1 {
+    font-weight: lighter;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 15px;
+    color:#444;
+    font-family: 'Outfit';
+    text-align: left;
+}
+
+footer p.titolo {
+    font-size: 20px;
+}
+
+p.copyright {
+    margin-top: 60px;
+}
+
+@media (max-width: 800px) { /* se la finestra ha una larghezza minore di 800px, fai lo sfondo giallo */
+    body { 
+        background: yellow;
+    }
+}
+
+@media (max-width: 400px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+    body {
+        background: chartreuse;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+img.home {
+    max-width: 35%;
+    height: 35%;
+}
